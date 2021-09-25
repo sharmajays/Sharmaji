@@ -10,8 +10,8 @@ const PORT = process.env.PORT || 8000;
 const app = express();
 
 const httpsOptions = {
-    key: fs.readFileSync('C:/Users/Ajay Sharma/Desktop/quickmeet-master/security/cert.key'),
-    cert: fs.readFileSync('C:/Users/Ajay Sharma/Desktop/quickmeet-master/security/cert.pem')
+    key: fs.readFileSync('security/cert.key'),
+    cert: fs.readFileSync('security/cert.pem')
 }
 
 const server = https.createServer(httpsOptions,app);
